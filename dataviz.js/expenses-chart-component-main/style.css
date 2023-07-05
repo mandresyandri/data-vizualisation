@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+:root {
+    /* Primary color */
+    --softRed: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    /* Secondary color */
+    --darkBrown: hsl(25, 47%, 15%);
+    --mediumBrown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --veryPaleOrange: hsl(33, 100%, 98%);
+
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+
+/* Top content */
+.summary {
+    background-color: var(--softRed);
+    color: var(--veryPaleOrange);
+    display: flex;
+    width: 350px;
+    padding: 25px;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.text-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: normal;
+}
+
+.count{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Bottom content */
+.details {
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    height: auto;
+    background-color: var(--veryPaleOrange);
+}
+
+.header-graph{
+    color:var(--darkBrown);
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.percent-total, .count-total{
+    font-weight: bold;
+}
+
+.count-total{
+    font-size: 35px;
+}
+
+.percent-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Code from frontend mentor */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
